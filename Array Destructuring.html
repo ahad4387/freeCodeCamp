@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Destructuring</h1>
+    <p>IF we have an array [1,2,3] and we want to store the values of array in variables 
+        we do it like this
+        arr = [1,2,3];
+
+        let fstElement = arr[0];
+        let SndElement = arr[1];
+        let thrdElement = arr[2];
+        
+        console.log(fstElement, SndElement, thrdElement);
+
+        Instead of this we can directly use array Destructuring method to 
+        assign variables to the array
+        dArr = [fstE, secE, thrdE] = arr;
+        console.log(fstE);
+        console.log(secE);
+        console.log(thrdE);
+        now this means the first element in dArr is assigned to 1st element of the arr,
+        so on and so forth.
+        if in case there  more elements in dArr, then the empty element will be undefined.
+
+
+    </p>
+</body>
+
+<script>
+
+arr = [1,2,3];
+
+let fstElement = arr[0];
+let SndElement = arr[1];
+let thrdElement = arr[2];
+
+console.log(fstElement, SndElement, thrdElement);
+
+dArr = [fstE, secE, thrdE] = arr;
+console.log(fstE);
+console.log(secE);
+console.log(thrdE);
+
+
+</script>
+
+</html>
