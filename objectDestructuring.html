@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object Destructuring</h1>
+</body>
+
+<script>
+    /* Object Destructuring is also same as array destructuring, only difference is that we
+    have to give the name of the variable */
+    /* Lets take an example of simple object */
+
+    let book = {
+        name: "Advance js",
+        page: 200,
+        price: 300,
+        publication: {
+            pub_name: "techGun",
+            year: 2022
+        }
+    };
+    let bookName = book.name;
+    console.log(bookName);
+    /* we used to acces the object like this, but in the case of objectDestructuring */
+    let {name: title, page, price = 200, publication: {pub_name, year}} = book;
+    /* if we want to change the name of the element then we can do like this name: title,
+    now name can be accesed by title  */
+    console.log(title);
+    /* if we want to assign a default value to the element the we can do it like this price = 200 */
+    /* if we have nested objects then we should use key word: {keyword, keyword}, as used above */
+</script>
+</html>
